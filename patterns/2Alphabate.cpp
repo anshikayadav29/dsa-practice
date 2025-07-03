@@ -1,0 +1,54 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void print1(int n){}
+void print2(int n){}
+void print3(int n){}
+void print4(int n){}
+void print5(int n){}
+void print6(int n){}
+void print7(int n){}
+void print8(int n){}
+void print9(int n){}
+void print10(int n){}
+void print11(int n){}
+void print12(int n){}
+void print13(int n){}
+void print14(int n){}
+void print15(int n){}
+void print16(int n){}
+void print17(int n){}
+void print18(int n){
+    for(int i = 0; i < n; i++) {
+        
+        // Step 1: Print spaces
+        for(int space = 0; space < n - i - 1; space++) {
+            cout << " ";
+        }
+
+        // Step 2: Print characters in palindrome
+        char ch = 'A';
+        int breakpoint = (2 * i + 1) / 2;
+
+        for(int j = 0; j < 2 * i + 1; j++) {
+            cout << ch;
+            if(j < breakpoint)
+                ch++;
+            else
+                ch--;
+        }
+
+        cout << endl;
+    }
+}
+
+int main(){
+    int t;
+    cin >> t;
+    for(int i = 0; i < t; i++){
+        int n;
+        cin >> n;
+        print18(n); 
+    }
+    return 0;
+}
