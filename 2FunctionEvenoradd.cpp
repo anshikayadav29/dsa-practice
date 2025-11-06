@@ -1,3 +1,4 @@
+//code of evenodd
 <<<<<<< HEAD
 #include<iostream>
 using namespace std;
